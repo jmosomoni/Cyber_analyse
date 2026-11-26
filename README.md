@@ -114,15 +114,6 @@ UTILISER_LLM = True        # False = détection code seule (ultra rapide)
 - **Victime** : exécute le détecteur
 - Attaques testées : scan de ports (`nmap`), brute-force SSH (`hydra`)
 
-## Ce que j'ai appris
-
-- Capturer et filtrer du trafic avec tcpdump (SYN, multicast, filtres par hôte)
-- La différence SYN / SYN-ACK pour distinguer attaquant et victime
-- Le rôle des listes blanches pour réduire les faux positifs
-- Interroger un LLM par programmation (prompt, API, modèle spécialisé)
-- Les limites d'un LLM local (vitesse CPU, faux positifs) → d'où l'architecture
-  hybride où le code décide et l'IA explique
-
 ## Améliorations possibles
 
 - Niveaux de gravité calculés par le code (Faible / Moyen / Élevé / Critique)
